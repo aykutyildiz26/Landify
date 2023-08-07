@@ -1,1 +1,1 @@
-# figma-to-css
+# This is a sample application using Figma tool.
