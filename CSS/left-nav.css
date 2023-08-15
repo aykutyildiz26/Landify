@@ -72,3 +72,21 @@
 .dropdown-content a:hover{
     background-color: #ddd;
 }
+
+
+@media all and (max-width: 1200px){
+    .left-nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    .logotype{
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .left-nav-items{
+        flex-direction: column;
+        margin: 0% auto 0 auto;
+    }
+}

@@ -2,5 +2,12 @@
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    
+}
+
+
+
+@media all and (max-width: 1200px){
+    .right-nav{
+        flex-direction: column;
+    }
 }
