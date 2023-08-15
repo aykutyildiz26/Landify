@@ -3,22 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/background.css">
+    <link rel="stylesheet" href="CSS/left-nav.css">
+    <link rel="stylesheet" href="CSS/right-nav.css">
     <title>Figma to HTML & CSS</title>
 </head>
-<body>
-    <p>This is my Figma to HTML and CSS App.</p>
-    <div class="app">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">More</a></li>
+<body> 
+    <header class="main-header">
+        <nav class="left-nav">
+            <div class="logotype">
+                <img src="img/Logo.png" alt="A square logo">
+                <img src="img/Landify.png" alt="Black Landify">
+            </div>
+            <ul class="left-nav-items">
+                <li><a class="nav-link-text" href="index.html">Home</a></li>
+                <li><a class="nav-link-text" href="#">About</a></li>
+                <li><a class="nav-link-text" href="#">Pricing</a></li>
+                <li><a class="nav-link-text" href="#">Blogs</a></li>
+                <li><a class="nav-link-text" href="#">Jobs</a></li>
+                <li class="dropdown">
+                    <a class="nav-link-text" href="#">More</a>
+                    <img class="drop-img" src="img/chevron-down.jpg" alt="">
+                    <div class="dropdown-content">
+                        <a href="#">Link1</a>
+                        <a href="#">Link2</a>
+                        <a href="#">Link3</a>
+                    </div>
+                </li>
             </ul>
         </nav>
-    </div>
+
+        <nav>
+            <div class="right-nav">
+                <img src="img/Google Play Badge.png" alt="Google Play Logo">
+                <img src="img/App Store Badge.png" alt="App Store Logo">
+            </div>
+        </nav>
+    </header>
+
+
+
 </body>
 </html>

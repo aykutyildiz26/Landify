@@ -1,0 +1,8 @@
+
+.main-header{
+    display: flex;
+    padding: 16px 165px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 261px;
+}
