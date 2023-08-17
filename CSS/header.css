@@ -1,10 +1,12 @@
 
 .main-header{
-    display: flex;
-    padding: 16px 165px;
-    justify-content: space-between;
+    display: inline-flex;
+    padding: 20px 140px;
+    justify-content: center;
     align-items: center;
-    gap: 261px;
+    gap: 680px;
+    position: relative; /* Thinking about it. */
+   
 }
 
 @media all and (max-width: 1200px){
