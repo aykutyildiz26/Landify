@@ -2,18 +2,67 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-.circle{
-    width: 406px;
-    height: 406px;
+
+.hero{
+    height: 866px;
+    background: var(--default-white, #fff);
+    
+}
+
+.Background{
+
+    width: 100%;
+    height: 866px;
+    flex-shrink: 0;
+    position: absolute;
+
+    fill: rgba(242, 247, 255, 0.70);
+    backdrop-filter: blur(100px);
+}
+
+.BG{
+
+    width: 100%;
+    height: 752px;
+    flex-shrink: 0;
+    position: absolute;
+
+    opacity: 0.7;
+    background: #F2F7FF;
+    
+}
+
+.PurpleCircle{
+    display: flex;
+    position: relative;
+    width: 380px;
+    height: 300px;
     flex-shrink: 0;
     margin-left: auto;
     margin-bottom: auto;
 
-
-    
-    border-radius: 406px;
-    opacity: 0.6;
+    border-radius: 9999px;
+    opacity: 0.5;
+    filter: blur(130px);
+    -webkit-filter: blur(130px);
     background: var(--brand-purple, #8C30F5);
+}
+
+.TurqoiseCircle{
+    display: flex;
+    position: relative;
+    flex-shrink: 0;
+    width: 168px;
+    height: 168px;
+    margin: auto 45% auto auto;
+    filter: blur(60px);
+
+    opacity: 0.70;
+    border-radius: 9999px;
+}
+
+.parallelogram{
+    position: absolute;
+    transform: skewY(-10deg);
 }
