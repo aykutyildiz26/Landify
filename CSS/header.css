@@ -9,7 +9,7 @@
    
 }
 
-@media all and (max-width: 1200px){
+@media all and (max-width: 1000px){
     .main-header{
         padding: 12px 100px;
         gap: 50px;
@@ -17,5 +17,4 @@
         flex: 1 1 50%;
         flex-direction: column;
     }
-
 }

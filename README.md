@@ -8,3 +8,4 @@ Added drop menu in the left nav.
 Added Contents.
 Added background.
 
+Added logo section.

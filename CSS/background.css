@@ -5,6 +5,7 @@
 }
 
 .hero{
+
     height: 866px;
     background: var(--default-white, #fff);
     
@@ -65,4 +66,8 @@
 .parallelogram{
     position: absolute;
     transform: skewY(-10deg);
+}
+
+@media all and (max-width: 1000px){
+    
 }
