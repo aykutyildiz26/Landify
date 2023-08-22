@@ -3,45 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="CSS/style.css">
 
-
-    <link rel="stylesheet" href="CSS/header.css">
-    <link rel="stylesheet" href="CSS/background.css">
-    <link rel="stylesheet" href="CSS/left-nav.css">
-    <link rel="stylesheet" href="CSS/right-nav.css">
+    <link rel="stylesheet" href="CSS/hero-section.css">
     <link rel="stylesheet" href="CSS/content.css">
-    <link rel="stylesheet" href="CSS/logo.css">
-    <link rel="stylesheet" href="CSS/feature-multiple.css">
+    <link rel="stylesheet" href="CSS/logo-clouds.css">
+    <link rel="stylesheet" href="CSS/features-multiple-section.css">
+    <link rel="stylesheet" href="CSS/testimonials-section.css">
+    <link rel="stylesheet" href="CSS/stats-section.css">
+    <link rel="stylesheet" href="CSS/features-description-section.css">
+    <link rel="stylesheet" href="CSS/bottom-features-section.css">
+    <link rel="stylesheet" href="CSS/adverts-section.css">
+    <link rel="stylesheet" href="CSS/footer.css">
 
 
     <title>Figma to HTML & CSS</title>
 </head>
 <body> 
-    <div class="hero">
-        <div class="Background">
-            <div class="BG">
-            </div>
-            <div class="PurpleCircle"></div>
-            <div class="TurqoiseCircle">
-                <svg xmlns="http://www.w3.org/2000/svg" width="168" height="168" viewBox="0 0 168 168" fill="none">
-                    <circle opacity="0.6" cx="84" cy="84" r="84" fill="#2EC5CE"/>
-                    </svg>
-            </div>
-
-            <div class="parallelogram" style="width: 420px; height: 60px; left: 1430px; top: 541.49px; background: #75E3EA"></div>
-            <div class="parallelogram" style="width: 612px; height: 60px; left: 1238px; top: 498px; background: #D6B1FF"></div>
-            <div class="parallelogram" style="width: 420px; height: 60px; left: 1400px; top: 426px; background: #F1E4FF"></div>
-            <div class="parallelogram" style="width: 420px; height: 60px; left: 0px; top: 630.50px; background: #75E3EA"></div>
-            <div class="parallelogram" style="width: 420px; height: 60px; left: -152px; top: 718.49px; background: #F1E4FF"></div>
-        </div>
-        <header class="main-header">
-            <nav class="left-nav">
-                <div class="logotype">
-                    <img src="img/Logo.png" alt="A square logo">
-                    <img src="img/Landify.png" alt="Black Landify">
-                </div>
-                <ul class="left-nav-items">
+    <section class="hero-section container">
+        <header>
+            <nav>
+                <ul class="left-nav">
+                    <li class="nav-list__item logo"><img src="images/Darklogo.png" alt="landify logo"></li>
                     <li><a class="nav-link-text" href="index.html">Home</a></li>
                     <li><a class="nav-link-text" href="#">About</a></li>
                     <li><a class="nav-link-text" href="#">Pricing</a></li>
@@ -49,103 +34,212 @@
                     <li><a class="nav-link-text" href="#">Jobs</a></li>
                     <li class="dropdown">
                         <a class="nav-link-text" href="#">More</a>
-                        <img class="drop-img" src="img/chevron-down.jpg" alt="">
+                        <img class="nav-link-text" src="images/chevron-down.jpg" alt="">
                         <div class="dropdown-content">
                             <a href="#">Link1</a>
                             <a href="#">Link2</a>
                             <a href="#">Link3</a>
                         </div>
-                    </li>
+                    </li> 
+                </ul>
+                <ul class="right-nav">
+                    <li><img class="hero-badge" src="images/App Store Badge.png" alt="app store badge"></li>
+                    <li><img class="hero-badge" src="images/Google Play Badge.png" alt="google play badge"></li>
                 </ul>
             </nav>
-    
-            <nav>
-                <div class="right-nav">
-                    <img src="img/Google Play Badge.png" alt="Google Play Logo">
-                    <img src="img/App Store Badge.png" alt="App Store Logo">
-                </div>
-            </nav>
         </header>
-
-        <div class="hero-content">
-            <div class="organiseprojectsgetmoredone">Organise projects. Get more done.</div>
-            <input class="button" type="button" value="Get Start">
-
-        </div>
-
-        <div class="phone-mockup">
-            <div class="mobile-i-phone-x">
-              <img class="screen" src="img/Screen.png"/>
-              <img class="i-phone-x" src="img/iPhone X.png"/>
+        <div class="hero-main">
+            <div class="hero-main-leftside">
+                <h1>Organise projects.<br>Get more done.</h1>
+                <button class="hero-btn">Get Started</button>
+            </div>
+            <div class="hero-main-phone-mockup">
+                <img class="phone-mockup" src="images/Phone Mockup.png" alt="phone mockup">
             </div>
         </div>
 
+    </section>
+    <div class="logo-clouds container">
+        <ul class="logo-clouds-list">
+            <li><img class="logo-clouds-img" src="images/Airbnb Logo.png" alt="Airbnb"></li>
+            <li><img class="logo-clouds-img" src="images/Hubspot Logo.png" alt="Hubspot"></li>
+            <li><img class="logo-clouds-img" src="images/Google Logo.png" alt="google"></li>
+            <li><img class="logo-clouds-img" src="images/Microsoft Logo.png" alt="Microsoft"></li>
+            <li><img class="logo-clouds-img" src="images/Walmart Logo.png" alt="Walmart"></li>
+            <li><img class="logo-clouds-img" src="images/FedEx Logo.png" alt="FedEx"></li>
+        </ul>
     </div>
-
-    <div class="logo-clouds">
-        <div class="logos-section">
-            <div class="divider"></div>
-            <div class="logos">
-                <img src="img/Airbnb Logo.png" alt="Airbnb logo">
-                <img src="img/Hubspot Logo.png" alt="Hubspot logo">
-                <img src="img/Google Logo.png" alt="Google logo">
-                <img src="img/Microsoft Logo.png" alt="Microsoft logo">
-                <img src="img/Walmart Logo.png" alt="Walmart logo">
-                <img src="img/FedEx Logo.png" alt="FedEx logo">
+    <div class="features-multiple-section container">
+        <div class="features-multiple-heading">
+            <div class="features-multiple-section-title">
+                <h2 class="features-multiple-section-title__h2">Tailor-made features</h2>
+                <p class="features-multiple-section-title__p">Lorem ipsum is common placeholder text used to demonstrate the
+                    graphic elements of a document or visual
+                    presentation.</p>
             </div>
-            <div class="divider"></div>
-        </div>
-    </div>
-    <div class="feature-multiple">
-        <div class="section-heading">
-            <div class="the-heading">
-                <h2 class="section-tile">Tailor-made features</h2>
-            </div>
-            <p class="description">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
         </div>
         <div class="features-list">
-            <div class="features-row">
-                <div class="features-container">
-                    <img src="img/Feature Icons/01.png" alt="01">
-                    <div class="details">
-                        <h3 class="headline">Robust Workflow</h3>
-                        <p class="little-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
-                    </div>
-                </div>
-                <div class="features-container">
-                    <img src="img/Feature Icons/02.png" alt="02">
-                    <div class="details">
-                        <h3 class="headline">Flexibility</h3>
-                        <p class="little-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
-                    </div>
-                </div>
-                <div class="features-container">
-                    <img src="img/Feature Icons/03.png" alt="03">
-                    <div class="details">
-                        <h3 class="headline">User Friendly</h3>
-                        <p class="little-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
-                    </div>
+            <div class="feature">
+                <img src="images/Feature Icons/01.png" alt="Robust Workflow">
+                <h4>Robust Workflow</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+            </div>
+            <div class="feature">
+                <img src="images/Feature Icons/02.png" alt="Flexibility">
+                <h4>Flexibility</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+            </div>
+            <div class="feature">
+                <img src="images/Feature Icons/03.png" alt="User Friendly">
+                <h4>User Friendly</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+            </div>
+            <div class="feature">
+                <img src="images/Feature Icons/04.png" alt="Multiple Layouts">
+                <h4>Multiple Layouts</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+            </div>
+            <div class="feature">
+                <img src="images/Feature Icons/05.png" alt="Better Components">
+                <h4>Better Components</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+            </div>
+            <div class="feature">
+                <img src="images/Feature Icons/08.png" alt="Well Organised">
+                <h4>Well Organised</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+            </div>
+        </div>
+    </div>
+    <section class="testimonials-section container">
+        <div class="testimonials-section-leftside">
+            <h2>Real Stories from <br>Real Customers</h2>
+            <p class="get-inspired">Get inspired by these stories.</p>
+            <div class="testimonial-card hubspot-card">
+                <img src="images/Testimonial/Layer 2.png" alt="Hubspot logo">
+                <p class="testimonial-card__description">To quickly start my startup landing page design, I was
+                    looking for a landing page UI Kit. Landify
+                    is one of the best landing page UI kit I have come across. It’s so flexible, well organised and
+                    easily editable.</p>
+                <p class="testimonial-card__name">Floyd Miles</p>
+                <span class="testimonial-card__job">Vice President, GoPro</span>
+            </div>
+        </div>
+        <div class="testimonials-section-rightside">
+            <div class="testimonial-card airbnb-card" data-aos="flip-down" data-aos-delay="500" data-aos-duration="500">
+                <img src="images/Testimonial/Airbnb Logo.png" alt="airbnb logo">
+                <p class="testimonial-card__description">I used landify and created a landing page for my startup
+                    within a week. The Landify UI Kit is
+                    simple and highly intuitive, so anyone can use it.</p>
+                <p class="testimonial-card__name">Jane Cooper</p>
+                <span class="testimonial-card__job">CEO, Airbnb</span>
+            </div>
+            <div class="testimonial-card bookmyshow-card" data-aos="flip-up" data-aos-delay="500" data-aos-duration="500">
+                <img src="images/Testimonial/BookMyShow Logo.png" alt="bookmyshow logo">
+                <p class="testimonial-card__description">Landify saved our time in designing my company page.</p>
+                <p class="testimonial-card__name">Kristin Watson</p>
+                <span class="testimonial-card__job">Co-Founder, BookMyShow</span>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="stats-section container"><div class="stats-section-column-wrapper">
+        <div class="stats-section-left-col">
+            <h2>Our 18 years of <br>achievements</h2>
+            <p>With our super powers we have reached this</p>
+        </div>
+        <div class="stats-section-right-col">
+            <div class="stat">
+                <img class="stat-icon" src="images/Feature Icons/01.png" alt="stat icon #1">
+                <div class="stats-text">
+                    <p class="stats-text__number">10,000+</p>
+                    <p class="stats-text__name">Downloads per day</p>
                 </div>
             </div>
-            <div class="features-row">
-                <div class="features-container">
-                    <img src="img/Feature Icons/04.png" alt="04">
-                    <h3 class="headline">Multiple Layouts</h3>
-                    <p class="little-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+            <div class="stat">
+                <img class="stat-icon" src="images/Feature Icons/02.png" alt="stat icon #2">
+                <div class="stats-text">
+                    <p class="stats-text__number">2 Million</p>
+                    <p class="stats-text__name">Users</p>
                 </div>
-                <div class="features-container">
-                    <img src="img/Feature Icons/05.png" alt="05">
-                    <h3 class="headline">Better Components</h3>
-                    <p class="little-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+            </div>
+            <div class="stat">
+                <img class="stat-icon" src="images/Feature Icons/03.png" alt="stat icon #3">
+                <div class="stats-text">
+                    <p class="stats-text__number">500+</p>
+                    <p class="stats-text__name">Clients</p>
                 </div>
-                <div class="features-container">
-                    <img src="img/Feature Icons/08.png" alt="08">
-                    <h3 class="headline">Well Organised</h3>
-                    <p class="little-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+            </div>
+            <div class="stat">
+                <img class="stat-icon" src="images/Feature Icons/04.png" alt="stat icon #4">
+                <div class="stats-text">
+                    <p class="stats-text__number">140</p>
+                    <p class="stats-text__name">Countries</p>
                 </div>
             </div>
         </div>
     </div>
+    </section>
+    <section class="features-description-section container">
+        <div class="features-description-section-wrapper">
+            <img class="features-description-section-image" src="images/phone mockup pink.png" alt="phone mockup">
+            <div class="features-description-section-text">
+                <h3 class="features-description-section-text__h3">Headline</h3>
+                <p class="features-description-section-text__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras
+                    adipiscing vulputate. Nisi, risus in suscipit non. Non commodo volutpat, pharetra.</p>
+                <span class="features-description-section-text__span">Get started</span>
+            </div>
+        </div>
+    </section>
+    <section class="bottom-features-section">
+        <div class="bottom-features-section-wrapper">
+            <div class="bottom-features-section-text">
+                <h3 class="bottom-features-section-text__h3">Enter the world of all <br> fashion trends</h3>
+                <p class="bottom-features-section-text__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Venenatis scelerisque at quam congue posuere libero in sit quam. Consequat, scelerisque non
+                    tincidunt sit lectus senectus.</p>
+            </div>
+            <img class="bottom-features-section-image" src="images/Cover Image.png" alt="cover image">
+        </div>
+    </section>
+    <section class="adverts-section">
+        <div class="adverts-section-wrapper">
+            <h2 class="ads-section-title">Manage your projects <br>from your mobile</h2>
+            <p class="ads-section-description">Download the app to manage your projects, keep track of the progress and
+                complete tasks without procastinating. Stay on track and complete on time!</p>
+            <div class="cta-wrapper">
+                <img src="images/Google Play Badge.png" alt="google play badge">
+                <img src="images/App Store Badge.png" alt="app store badge">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-left-col">
+                <img src="images/footerlogo.png" alt="footer logo">
+                <ul class="footer-list">
+                    <li>Download Now</li>
+                    <li>License</li>
+                </ul>
+                <ul class="footer-list">
+                    <li>About</li>
+                    <li>Features</li>
+                    <li>Pricing</li>
+                    <li>Careers</li>
+                    <li>Help</li>
+                    <li>Privacy Policy</li>
+                </ul>
+                <p class="footer-year">@ 2020 Landify UI Kit. All rights reserved</p>
+            </div>
+            <div class="footer-right-col">
+                <p>Get the app</p>
+                <img src="images/App Store Badge.png" alt="app store badge">
+                <img src="images/Google Play Badge.png" alt="google play badge">
+            </div>
+        </div>
+    </footer>
+
 
 </body>
 </html>
