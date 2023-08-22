@@ -1,40 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.hero{
-
-    height: 866px;
-    background: var(--default-white, #fff);
 
 
-    
-}
-
-.Background{
-
-    width: 100%;
-    height: 866px;
-    flex-shrink: 0;
-    position: absolute;
-
-    fill: rgba(242, 247, 255, 0.70);
-    backdrop-filter: blur(100px);
-}
-
-.BG{
-
-    width: 100%;
-    height: 752px;
-    flex-shrink: 0;
-    position: absolute;
-
-    opacity: 0.7;
-    background: #F2F7FF;
-    
-}
+                              /* Not using anymore. */
+                              /* Manual hero section background*/
 
 .PurpleCircle{
     display: flex;
@@ -68,8 +35,4 @@
 .parallelogram{
     position: absolute;
     transform: skewY(-10deg);
-}
-
-@media all and (max-width: 1000px){
-    
 }
