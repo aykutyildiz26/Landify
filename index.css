@@ -1,0 +1,24 @@
+@import "./css/reset.css";
+@import "./css/variables.css";
+@import "./css/header.css";
+@import "./css/hero-section.css";
+@import "./css/logo.css";
+@import "./css/features-section-part-1.css";
+@import "./css/testimonial.css";
+@import "./css/statistics-section.css";
+@import "./css/call-to-action.css";
+@import "./css/footer-menu.css";
+@import "./css/features-section-part-2.css";
+@import "./css/features-section-part-3.css";
+
+.app-container {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-20);
+}
