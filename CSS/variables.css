@@ -1,0 +1,100 @@
+:root {
+  /* colors */
+  --main-black: #18191f;
+  --black: #0b0d17;
+  --white: #ffffff;
+  --gray: #969bab;
+  --white-smoke: #f1f1f1;
+  --purple: #8c30f5;
+  --turquoise-50: #d5fafc;
+  --turquoise-100: #2ec5ce;
+
+  /* typography */
+  --primary-font: "Inter", sans-serif;
+  --quote-font: "Mukta", sans-serif;
+  --fs-8: 8px;
+  --fs-10: 10px;
+  --fs-12: 12px;
+  --fs-14: 14px;
+  --fs-16: 16px;
+  --fs-18: 18px;
+  --fs-22: 22px;
+  --fs-24: 24px;
+  --fs-28: 28px;
+  --fs-32: 32px;
+  --fs-36: 36px;
+  --fs-38: 38px;
+  --fs-40: 40px;
+  --fs-42: 42px;
+  --fs-48: 48px;
+  --fs-72: 72px;
+  --fs-200: 200px;
+  --fs-300: 300px;
+  --fs-400: 400px;
+
+  /* font weights */
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+  --fw-900: 900;
+
+  /* spacing */
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-15: 15px;
+  --space-16: 16px;
+  --space-18: 18px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-26: 26px;
+  --space-30: 30px;
+  --space-32: 32px;
+  --space-36: 36px;
+  --space-40: 40px;
+  --space-45: 45px;
+  --space-48: 48px;
+  --space-50: 50px;
+  --space-56: 56px;
+  --space-64: 64px;
+  --space-70: 70px;
+  --space-74: 74px;
+  --space-80: 80px;
+  --space-90: 90px;
+  --space-96: 96px;
+  --space-100: 100px;
+  --space-120: 120px;
+  --space-140: 140px;
+  --space-150: 150px;
+  --space-160: 160px;
+  --space-165: 165px;
+  --space-180: 180px;
+
+  /* line-heights */
+  --lh-10: 10px;
+  --lh-18: 18px;
+  --lh-20: 20px;
+  --lh-22: 22px;
+  --lh-24: 24px;
+  --lh-26: 26px;
+  --lh-28: 28px;
+  --lh-32: 32px;
+  --lh-40: 40px;
+  --lh-50: 50px;
+  --lh-54: 54px;
+  --lh-60: 60px;
+  --lh-64: 64px;
+  --lh-98: 98px;
+  --lh-logo-height: 1.2;
+
+  /* shadows */
+  --soft-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --soft-shadow-2: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  --soft-shadow-3: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  --outline-shadow: 0px 20px 19px 10px whitesmoke;
+
+  /* Opacity */
+  --opacity-30: 0.3;
+}

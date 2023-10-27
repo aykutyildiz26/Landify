@@ -1,245 +1,487 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="CSS/style.css">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript,project management,sass"
+    />
+    <meta
+      name="description"
+      content="A Project Management Sass Product's Landing Page"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link rel="stylesheet" href="CSS/hero-section.css">
-    <link rel="stylesheet" href="CSS/content.css">
-    <link rel="stylesheet" href="CSS/logo-clouds.css">
-    <link rel="stylesheet" href="CSS/features-multiple-section.css">
-    <link rel="stylesheet" href="CSS/testimonials-section.css">
-    <link rel="stylesheet" href="CSS/stats-section.css">
-    <link rel="stylesheet" href="CSS/features-description-section.css">
-    <link rel="stylesheet" href="CSS/bottom-features-section.css">
-    <link rel="stylesheet" href="CSS/adverts-section.css">
-    <link rel="stylesheet" href="CSS/footer.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
+    <link href="./index.css" rel="stylesheet" />
 
+    <title>Landify</title>
+  </head>
 
-    <title>Figma to HTML & CSS</title>
-</head>
-<body> 
-    <section class="hero-section container">
-        <header>
-            <nav>
-                <ul class="left-nav">
-                    <li class="nav-list__item logo"><img src="images/Darklogo.png" alt="landify logo"></li>
-                    <li><a class="nav-link-text" href="index.html">Home</a></li>
-                    <li><a class="nav-link-text" href="#">About</a></li>
-                    <li><a class="nav-link-text" href="#">Pricing</a></li>
-                    <li><a class="nav-link-text" href="#">Blogs</a></li>
-                    <li><a class="nav-link-text" href="#">Jobs</a></li>
-                    <li class="dropdown">
-                        <a class="nav-link-text" href="#">More</a>
-                        <img class="nav-link-text" src="images/chevron-down.jpg" alt="">
-                        <div class="dropdown-content">
-                            <a href="#">Link1</a>
-                            <a href="#">Link2</a>
-                            <a href="#">Link3</a>
-                        </div>
-                    </li> 
-                </ul>
-                <ul class="right-nav">
-                    <li><img class="hero-badge" src="images/App Store Badge.png" alt="app store badge"></li>
-                    <li><img class="hero-badge" src="images/Google Play Badge.png" alt="google play badge"></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="hero-main">
-            <div class="hero-main-leftside">
-                <h1>Organise projects.<br>Get more done.</h1>
-                <button class="hero-btn">Get Started</button>
-            </div>
-            <div class="hero-main-phone-mockup">
-                <img class="phone-mockup" src="images/Phone Mockup.png" alt="phone mockup">
-            </div>
+  <body>
+    <main>
+      <header class="hero-header blurred-bg">
+        <nav class="hero-header-navigator">
+          <ul class="left-nav">
+            <li class="left-nav-logo-container logo" id="left-logo">
+              <img src="images/colorlogo.svg" alt="landify logo" />
+              <p class="logo-text">Landify</p>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Jobs</a></li>
+
+            <li class="dropdown">
+              <a class="nav-link" href="#">More</a>
+              <img class="nav-link" src="images/chevron-down.png" alt="" />
+              <div class="dropdown-content">
+                <a class="nav-link" href="#">Link1</a>
+                <a class="nav-link" href="#">Link2</a>
+                <a class="nav-link" href="#">Link3</a>
+              </div>
+            </li>
+          </ul>
+
+          <span id="hamburger">&#8803;</span>
+
+          <ul class="flex-container">
+            <li class="flex-container-list">
+              <img
+                class="hero-badge"
+                src="images/app-store-badge.svg"
+                alt="app store badge"
+              />
+            </li>
+            <li class="flex-container-list">
+              <img
+                class="hero-badge"
+                src="images/google-play-badge.svg"
+                alt="google play badge"
+              />
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-area">
+          <div class="main-content">
+            <h1 class="hero-title">
+              <span class="title-word">Organise projects.</span
+              ><span class="title-word">Get more Done.</span>
+            </h1>
+            <button class="hero-button">Get Started</button>
+          </div>
         </div>
 
-    </section>
-    <div class="logo-clouds container">
-        <ul class="logo-clouds-list">
-            <li><img class="logo-clouds-img" src="images/Airbnb Logo.png" alt="Airbnb"></li>
-            <li><img class="logo-clouds-img" src="images/Hubspot Logo.png" alt="Hubspot"></li>
-            <li><img class="logo-clouds-img" src="images/Google Logo.png" alt="google"></li>
-            <li><img class="logo-clouds-img" src="images/Microsoft Logo.png" alt="Microsoft"></li>
-            <li><img class="logo-clouds-img" src="images/Walmart Logo.png" alt="Walmart"></li>
-            <li><img class="logo-clouds-img" src="images/FedEx Logo.png" alt="FedEx"></li>
-        </ul>
-    </div>
-    <div class="features-multiple-section container">
-        <div class="features-multiple-heading">
-            <div class="features-multiple-section-title">
-                <h2 class="features-multiple-section-title__h2">Tailor-made features</h2>
-                <p class="features-multiple-section-title__p">Lorem ipsum is common placeholder text used to demonstrate the
-                    graphic elements of a document or visual
-                    presentation.</p>
-            </div>
+        <div class="hero-area">
+          <img class="phone-img" src="images/iPhone.svg" alt="phone image" />
         </div>
-        <div class="features-list">
-            <div class="feature">
-                <img src="images/Feature Icons/01.png" alt="Robust Workflow">
-                <h4>Robust Workflow</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
-            </div>
-            <div class="feature">
-                <img src="images/Feature Icons/02.png" alt="Flexibility">
-                <h4>Flexibility</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
-            </div>
-            <div class="feature">
-                <img src="images/Feature Icons/03.png" alt="User Friendly">
-                <h4>User Friendly</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
-            </div>
-            <div class="feature">
-                <img src="images/Feature Icons/04.png" alt="Multiple Layouts">
-                <h4>Multiple Layouts</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
-            </div>
-            <div class="feature">
-                <img src="images/Feature Icons/05.png" alt="Better Components">
-                <h4>Better Components</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
-            </div>
-            <div class="feature">
-                <img src="images/Feature Icons/08.png" alt="Well Organised">
-                <h4>Well Organised</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
-            </div>
+      </section>
+
+      <!-- Logos Section -->
+      <section class="logos">
+        <div class="divider"></div>
+        <!-- prettier-ignore -->
+        <div class="logos-wrapper">
+        <div class="logo-wrap"><img class="partner-logo" src="./images/logos/Airbnb.svg" alt="airbnb logo" /></div>
+        <div class="logo-wrap"><img class="partner-logo" src="./images/logos/FedEx.svg" alt="fedex logo" /></div>
+        <div class="logo-wrap"><img class="partner-logo" src="./images/logos/Google.svg" alt="google logo" /></div>
+        <div class="logo-wrap"><img class="partner-logo" src="./images/logos/Hubspot.svg" alt="hubspot logo" /></div>
+        <div class="logo-wrap"><img class="partner-logo" src="./images/logos/Microsoft.svg" alt="microsoft logo" />
         </div>
-    </div>
-    <section class="testimonials-section container">
-        <div class="testimonials-section-leftside">
-            <h2>Real Stories from <br>Real Customers</h2>
-            <p class="get-inspired">Get inspired by these stories.</p>
+        <div class="logo-wrap"><img class="partner-logo" src="./images/logos/Walmart.svg" alt="walmart logo" />
+        </div>
+      </div>
+        <div class="divider"></div>
+      </section>
+
+      <!-- Features Section | Part 1 -->
+      <section class="features-section-part-1">
+        <div class="features-section-title-wrapper">
+          <div class="features-section-title">
+            <h2 class="features-section-title-header">Tailor-made features</h2>
+            <p class="features-section-title-description">
+              Lorem ipsum is common placeholder text used to demonstrate the
+              graphic elements of a document or visual presentation.
+            </p>
+          </div>
+        </div>
+
+        <div class="features-section-list">
+          <div class="feature-details">
+            <img
+              class="feature-details-icon"
+              src="images/Feature Icons/feature-icon-1.svg"
+              alt="01"
+            />
+            <div class="feature-details-title">
+              <h4 class="feature-details-header">Robust workflow</h4>
+              <p class="feature-details-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                erat nibh tristique ipsum.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-details">
+            <img src="images/Feature Icons/feature-icon-2.svg" alt="02" />
+            <div class="feature-details-title">
+              <h4 class="feature-details-header">Flexibility</h4>
+              <p class="feature-details-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                erat nibh tristique ipsum.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-details">
+            <img src="images/Feature Icons/feature-icon-3.svg" alt="03" />
+            <div class="feature-details-title">
+              <h4 class="feature-details-header">User friendly</h4>
+              <p class="feature-details-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                erat nibh tristique ipsum.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-details">
+            <img src="images/Feature Icons/feature-icon-4.svg" alt="04" />
+            <div class="feature-details-title">
+              <h4 class="feature-details-header">Multiple layouts</h4>
+              <p class="feature-details-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                erat nibh tristique ipsum.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-details">
+            <img src="images/Feature Icons/feature-icon-5.svg" alt="05" />
+            <div class="feature-details-title">
+              <h4 class="feature-details-header">Better components</h4>
+              <p class="feature-details-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                erat nibh tristique ipsum.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-details">
+            <img src="images/Feature Icons/feature-icon-6.svg" alt="06" />
+            <div class="feature-details-title">
+              <h4 class="feature-details-header">Well organised</h4>
+              <p class="feature-details-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                erat nibh tristique ipsum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial Section -->
+      <section class="testimonial-section">
+        <div class="section-wrapper">
+          <div class="testimonial-section-left flex-container">
+            <div class="testimonial-left-header">
+              <img
+                class="quote-mark"
+                src="images/quote-mark.svg"
+                alt="A big quote mark"
+              />
+              <div class="testimonial-main-heading-container">
+                <h2 class="testimonial-main-title">
+                  <span>Real Stories from</span>
+                  <span>Real Customers</span>
+                </h2>
+                <p class="testimonial-main_description">
+                  Get inspired by these stories.
+                </p>
+              </div>
+            </div>
+
             <div class="testimonial-card hubspot-card">
-                <img src="images/Testimonial/Layer 2.png" alt="Hubspot logo">
-                <p class="testimonial-card__description">To quickly start my startup landing page design, I was
-                    looking for a landing page UI Kit. Landify
-                    is one of the best landing page UI kit I have come across. It’s so flexible, well organised and
-                    easily editable.</p>
-                <p class="testimonial-card__name">Floyd Miles</p>
-                <span class="testimonial-card__job">Vice President, GoPro</span>
-            </div>
-        </div>
-        <div class="testimonials-section-rightside">
-            <div class="testimonial-card airbnb-card" data-aos="flip-down" data-aos-delay="500" data-aos-duration="500">
-                <img src="images/Testimonial/Airbnb Logo.png" alt="airbnb logo">
-                <p class="testimonial-card__description">I used landify and created a landing page for my startup
-                    within a week. The Landify UI Kit is
-                    simple and highly intuitive, so anyone can use it.</p>
-                <p class="testimonial-card__name">Jane Cooper</p>
-                <span class="testimonial-card__job">CEO, Airbnb</span>
-            </div>
-            <div class="testimonial-card bookmyshow-card" data-aos="flip-up" data-aos-delay="500" data-aos-duration="500">
-                <img src="images/Testimonial/BookMyShow Logo.png" alt="bookmyshow logo">
-                <p class="testimonial-card__description">Landify saved our time in designing my company page.</p>
-                <p class="testimonial-card__name">Kristin Watson</p>
-                <span class="testimonial-card__job">Co-Founder, BookMyShow</span>
-            </div>
-        </div>
-        </div>
-    </section>
-    <section class="stats-section container"><div class="stats-section-column-wrapper">
-        <div class="stats-section-left-col">
-            <h2>Our 18 years of <br>achievements</h2>
-            <p>With our super powers we have reached this</p>
-        </div>
-        <div class="stats-section-right-col">
-            <div class="stat">
-                <img class="stat-icon" src="images/Feature Icons/01.png" alt="stat icon #1">
-                <div class="stats-text">
-                    <p class="stats-text__number">10,000+</p>
-                    <p class="stats-text__name">Downloads per day</p>
-                </div>
-            </div>
-            <div class="stat">
-                <img class="stat-icon" src="images/Feature Icons/02.png" alt="stat icon #2">
-                <div class="stats-text">
-                    <p class="stats-text__number">2 Million</p>
-                    <p class="stats-text__name">Users</p>
-                </div>
-            </div>
-            <div class="stat">
-                <img class="stat-icon" src="images/Feature Icons/03.png" alt="stat icon #3">
-                <div class="stats-text">
-                    <p class="stats-text__number">500+</p>
-                    <p class="stats-text__name">Clients</p>
-                </div>
-            </div>
-            <div class="stat">
-                <img class="stat-icon" src="images/Feature Icons/04.png" alt="stat icon #4">
-                <div class="stats-text">
-                    <p class="stats-text__number">140</p>
-                    <p class="stats-text__name">Countries</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
-    <section class="features-description-section container">
-        <div class="features-description-section-wrapper">
-            <img class="features-description-section-image" src="images/phone mockup pink.png" alt="phone mockup">
-            <div class="features-description-section-text">
-                <h3 class="features-description-section-text__h3">Headline</h3>
-                <p class="features-description-section-text__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras
-                    adipiscing vulputate. Nisi, risus in suscipit non. Non commodo volutpat, pharetra.</p>
-                <span class="features-description-section-text__span">Get started</span>
-            </div>
-        </div>
-    </section>
-    <section class="bottom-features-section">
-        <div class="bottom-features-section-wrapper">
-            <div class="bottom-features-section-text">
-                <h3 class="bottom-features-section-text__h3">Enter the world of all <br> fashion trends</h3>
-                <p class="bottom-features-section-text__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Venenatis scelerisque at quam congue posuere libero in sit quam. Consequat, scelerisque non
-                    tincidunt sit lectus senectus.</p>
-            </div>
-            <img class="bottom-features-section-image" src="images/Cover Image.png" alt="cover image">
-        </div>
-    </section>
-    <section class="adverts-section">
-        <div class="adverts-section-wrapper">
-            <h2 class="ads-section-title">Manage your projects <br>from your mobile</h2>
-            <p class="ads-section-description">Download the app to manage your projects, keep track of the progress and
-                complete tasks without procastinating. Stay on track and complete on time!</p>
-            <div class="cta-wrapper">
-                <img src="images/Google Play Badge.png" alt="google play badge">
-                <img src="images/App Store Badge.png" alt="app store badge">
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="footer-wrapper">
-            <div class="footer-left-col">
-                <img src="images/footerlogo.png" alt="footer logo">
-                <ul class="footer-list">
-                    <li>Download Now</li>
-                    <li>License</li>
-                </ul>
-                <ul class="footer-list">
-                    <li>About</li>
-                    <li>Features</li>
-                    <li>Pricing</li>
-                    <li>Careers</li>
-                    <li>Help</li>
-                    <li>Privacy Policy</li>
-                </ul>
-                <p class="footer-year">@ 2020 Landify UI Kit. All rights reserved</p>
-            </div>
-            <div class="footer-right-col">
-                <p>Get the app</p>
-                <img src="images/App Store Badge.png" alt="app store badge">
-                <img src="images/Google Play Badge.png" alt="google play badge">
-            </div>
-        </div>
-    </footer>
+              <img
+                class="testimonial-logo"
+                src="images/Testimonial/hubspot-logo.svg"
+                alt="Hubspot logo"
+              />
 
+              <div class="testimonial-content">
+                <p class="testimonial-card-quote">“</p>
+                <div class="testimony-details">
+                  <p class="testimony">
+                    To quickly start my startup landing page design, I was
+                    looking for a landing page UI Kit. Landify is one of the
+                    best landing page UI kit I have come across. It’s so
+                    flexible, well organised and easily editable.
+                  </p>
 
-</body>
+                  <div class="author-details">
+                    <h3 class="authors_name">Floyd Miles</h3>
+                    <p class="authors_role">Vice President, GoPro</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-section-right flex-container">
+            <div class="testimonial-card airbnb-card">
+              <img
+                class="testimonial-logo"
+                src="images/Testimonial/airbnb-logo.svg"
+                alt="airbnb logo"
+              />
+
+              <div class="testimonial-content">
+                <span class="testimonial-card-quote">“</span>
+                <div class="testimony-details">
+                  <p class="testimony">
+                    I used landify and created a landing page for my startup
+                    within a week. The Landify UI Kit is simple and highly
+                    intuitive, so anyone can use it.
+                  </p>
+
+                  <div class="author-details">
+                    <h3 class="authors_name">Jane Cooper</h3>
+                    <p class="authors_role">CEO, Airbnb</p>
+                  </div>
+                </div>
+
+                <p class="testimonial-card-quote closing-quote">"</p>
+              </div>
+            </div>
+
+            <div class="testimonial-card bookmyshow-card">
+              <img
+                class="testimonial-logo"
+                src="images/Testimonial/bookmyshow-logo.svg"
+                alt="bookmyshow logo"
+              />
+
+              <div class="testimonial-content">
+                <span class="testimonial-card-quote">“</span>
+                <div class="testimony-details">
+                  <p class="testimony">
+                    Landify saved our time in designing my company page.
+                  </p>
+
+                  <div class="author-details">
+                    <h3 class="authors_name">Kristin Watson</h3>
+                    <p class="authors_role">Co-Founder, BookMyShow</p>
+                  </div>
+                </div>
+
+                <p class="testimonial-card-quote closing-quote">"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Statistics Section -->
+      <section class="statistics-section">
+        <div class="statistics-section-wrapper">
+          <div class="statistics-section-title">
+            <h2 class="statistics-section-header">
+              <span>Our 18 years of</span>
+              <span>achievements</span>
+            </h2>
+            With our super powers we have reached this
+            <p class="call-to-action-description">
+              Download the app to manage your projects, keep track of the
+              progress and complete tasks without procastinating. Stay on track
+              and complete on time!
+            </p>
+          </div>
+
+          <div class="statistics-section-counts">
+            <div class="count-container">
+              <img src="images/Feature Icons/feature-icon-1.svg" alt="01" />
+              <div class="count-container-details">
+                <h4 class="count-container-header">10,000+</h4>
+                <p class="count-container-descrition">Downloads per day</p>
+              </div>
+            </div>
+
+            <div class="count-container">
+              <img src="images/Feature Icons/feature-icon-4.svg" alt="02" />
+              <div class="count-container-details">
+                <h4 class="count-container-header">2 Million</h4>
+                <p class="count-container-descrition">Users</p>
+              </div>
+            </div>
+
+            <div class="count-container">
+              <img src="images/Feature Icons/feature-icon-5.svg" alt="03" />
+              <div class="count-container-details">
+                <h4 class="count-container-header">500+</h4>
+                <p class="count-container-descrition">Clients</p>
+              </div>
+            </div>
+
+            <div class="count-container">
+              <img src="images/Feature Icons/feature-icon-7.svg" alt="04" />
+              <div class="count-container-details">
+                <h4 class="count-container-header">140</h4>
+                <p class="count-container-descrition">Countries</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section | Part - 2 -->
+      <section class="feature-section-2">
+        <div class="feature-section-2-wrapper">
+          <div class="phone-mockup-container">
+            <img
+              class="feature-section-2-phone"
+              src="./images/iPhone-X.svg"
+              alt="iPhone"
+            />
+          </div>
+          <div class="feature-section-2-right">
+            <h2 class="headline">Headline</h2>
+            <p class="para">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst
+              risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in
+              suscipit non. Non commodo volutpat, pharetra, vel.
+            </p>
+
+            <a class="get-started-btn">
+              <span class="get-started-text">Get Started</span>
+              <img
+                class="get-started-icon"
+                src="images/right-arrow.svg"
+                alt="arrow"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section | Part - 3 -->
+      <section class="features-section-3">
+        <div class="feature-section-3-wrapper">
+          <div class="feature-section-3-details">
+            <h2 class="feature-section-3-title">
+              Enter the world of all fashion trends
+            </h2>
+            <p class="feature-section-3-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis
+              scelerisque at quam congue posuere libero in sit quam. Consequat,
+              scelerisque non tincidunt sit lectus senectus.
+            </p>
+          </div>
+
+          <img
+            class="cover-image"
+            src="images/Cover Image.png"
+            alt="ideas-bulb"
+          />
+        </div>
+      </section>
+
+      <!-- Call To Action Section -->
+      <section class="call-to-action-section">
+        <div class="call-to-action-section-wrapper">
+          <div class="call-to-action-section-content">
+            <div class="call-to-action-title">
+              <h2 class="call-to-action-header">
+                <span>Manage your projects</span>
+                <span>from your mobile</span>
+              </h2>
+
+              <p class="call-to-action-description">
+                Download the app to manage your projects, keep track of the
+                progress and complete tasks without procastinating. Stay on
+                track and complete on time!
+              </p>
+            </div>
+
+            <div class="cta-get-the-app">
+              <p class="cta-get-the-app-description">Get the App</p>
+              <div class="cta-badge-container">
+                <img src="images/google-play-badge.svg" alt="Google Play" />
+                <img src="images/app-store-badge.svg" alt="App Store" />
+              </div>
+            </div>
+          </div>
+
+          <div class="call-to-action-mockup-container">
+            <img
+              class="cta-mockup"
+              src="images/phone-mockup-1.svg"
+              alt="A phone mockup"
+            />
+            <img
+              class="cta-mockup"
+              src="images/phone-mockup-2.svg"
+              alt="A phone mockup"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <section class="footer-section">
+        <div class="footer-section-wrapper">
+          <div class="footer-left">
+            <img
+              class="footer-logo"
+              src="images/colorlogo.svg"
+              alt="landify logo"
+            />
+
+            <!-- prettier-ignore -->
+            <ul class="footer-menu-1">
+            <li class="nav-item"><a class="nav-link" href="#">Download Now</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">License</a></li>
+          </ul>
+
+            <!-- prettier-ignore -->
+            <ul class="footer-menu-2">
+            <li class="nav-item"> <a class="nav-link" href="#">Features</a> </li>
+            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#">Privacy Policy</a> </li>
+          </ul>
+
+            <p>©2020 UI Kit All rights reserved</p>
+          </div>
+
+          <div class="footer-right">
+            <h3>Get the App</h3>
+            <img src="./images/app-store-badge.svg" alt="app store badge" />
+            <img src="./images/google-play-badge.svg" alt="google play-badge" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="Scripts/style.js"></script>
+  </body>
 </html>
