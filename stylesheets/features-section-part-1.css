@@ -1,0 +1,113 @@
+.features-section-part-1 {
+  padding: var(--space-64) 0;
+  text-align: center;
+}
+
+.features-section-title-wrapper,
+.feature-details-title,
+.feature-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features-section-title {
+  display: grid;
+  max-width: 540px;
+  gap: var(--space-8);
+  box-shadow: var(--soft-shadow);
+  padding: var(--space-16);
+}
+
+.features-section-title-header {
+  font-weight: var(--fw-800);
+  line-height: var(--space-64);
+  font-size: var(--fs-48);
+  text-shadow: var(--soft-shadow);
+}
+
+.features-section-title-description {
+  color: var(--main-black);
+  font-weight: var(--fw-400);
+  line-height: var(--space-32);
+}
+
+.features-section-list {
+  width: 90%;
+  max-width: 1110px;
+  margin: var(--space-48) auto;
+  display: grid;
+  grid-gap: var(--space-32);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.feature-details {
+  gap: var(--space-24);
+  max-width: 350px;
+  margin-inline: auto;
+  padding: 10px;
+  box-shadow: var(--outline-shadow);
+}
+
+.feature-details-title {
+  gap: var(--space-8);
+}
+
+.feature-details-header {
+  font-size: var(--fs-24);
+  font-weight: var(--fw-600);
+  line-height: var(--lh-32);
+}
+
+.feature-details-description {
+  color: var(--main-black);
+  font-weight: var(--fw-400);
+  line-height: var(--lh-26);
+}
+
+@media screen and (max-width: 1024px) {
+  .features-section-part-1 {
+    padding: var(--space-64) 0;
+  }
+
+  .features-section-title {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .features-section-part-1 {
+    padding: var(--space-12);
+    margin: var(--space-48) 0;
+  }
+
+  .features-section-title-header {
+    font-size: var(--fs-36);
+  }
+
+  .features-section-list {
+    width: 95%;
+  }
+
+  .feature-details-header {
+    font-size: var(--fs-18);
+    line-height: var(--lh-26);
+  }
+
+  .feature-details-description,
+  .features-section-title-description {
+    font-size: var(--fs-14);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .features-section-title-header {
+    font-size: var(--fs-32);
+    line-height: var(--lh-40);
+  }
+
+  .features-section-list {
+    width: 100%;
+  }
+}
