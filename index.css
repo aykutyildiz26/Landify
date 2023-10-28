@@ -1,15 +1,15 @@
-@import "./css/reset.css";
-@import "./css/variables.css";
-@import "./css/header.css";
-@import "./css/hero-section.css";
-@import "./css/logo.css";
-@import "./css/features-section-part-1.css";
-@import "./css/testimonial.css";
-@import "./css/statistics-section.css";
-@import "./css/call-to-action.css";
-@import "./css/footer-menu.css";
-@import "./css/features-section-part-2.css";
-@import "./css/features-section-part-3.css";
+@import "./reset.css";
+@import "./variables.css";
+@import "./header.css";
+@import "./hero-section.css";
+@import "./logo.css";
+@import "./features-section-part-1.css";
+@import "./testimonial.css";
+@import "./statistics-section.css";
+@import "./call-to-action.css";
+@import "./footer-menu.css";
+@import "./features-section-part-2.css";
+@import "./features-section-part-3.css";
 
 .app-container {
   max-width: 1440px;
